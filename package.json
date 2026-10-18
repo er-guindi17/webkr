@@ -1,0 +1,21 @@
+{
+  "name": "kahoot-raider-web",
+  "version": "1.0.0",
+  "description": "Kahoot Raider (web shell) by er.guindilla — port web listo para Vercel",
+  "type": "module",
+  "license": "ISC",
+  "private": true,
+  "scripts": {
+    "dev": "vercel dev",
+    "new-key": "node scripts/new-key.mjs"
+  },
+  "dependencies": {
+    "kahoot.js-updated-fixed": "^1.0.0"
+  },
+  "devDependencies": {
+    "vercel": "^37.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

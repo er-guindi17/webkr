@@ -1,0 +1,7 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "functions": {
+    "api/verify-key.js": { "memory": 128 },
+    "api/bot-gateway.js": { "maxDuration": 60 }
+  }
+}
