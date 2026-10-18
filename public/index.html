@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kahoot Raider - by er.guindilla</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div id="app-container">
+
+    <header class="title-bar">
+      <div class="title">Kahoot Raider</div>
+      <div class="badge">Web</div>
+    </header>
+
+    <!-- Overlay de clave -->
+    <div id="key-overlay" class="screen">
+      <div class="key-box">
+        <h2>Introduce tu clave</h2>
+        <input type="text" id="key-input" placeholder="NAI-xxxxx" autocomplete="off">
+        <button id="key-submit">Verificar</button>
+        <p id="key-error" class="error" style="display:none;"></p>
+      </div>
+    </div>
+
+    <!-- Contenido principal -->
+    <div id="main-content" class="screen" style="display:none;">
+      <div class="main-box">
+        <h1>By er.guindilla on Discord</h1>
+
+        <label for="pin">Código PIN del Kahoot:</label>
+        <input type="text" id="pin" placeholder="El pin del kahoot" inputmode="numeric">
+
+        <label for="count">¿Cuántos bots quieres enviar?:</label>
+        <input type="number" id="count" placeholder="Número de bots" min="1" value="10">
+
+        <label for="base">Nombre base:</label>
+        <input type="text" id="base" placeholder="El nombre del bot" value="SuperIdol">
+
+        <button id="start-btn">🚀 Iniciar</button>
+
+        <p class="notice">
+          El motor de bots solo opera sobre partidas que tú controlas o con permiso
+          del dueño del quiz. Si no está habilitado, verás un aviso aquí.
+        </p>
+
+        <pre id="output" style="display:none;"></pre>
+      </div>
+    </div>
+
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>
